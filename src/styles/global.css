@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@font-face {
+	font-family: "SunghyunSans";
+	src: url("/fonts/SunghyunSans/SunghyunSans-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SunghyunSans";
+	src: url("/fonts/SunghyunSans/SunghyunSans-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SunghyunSans";
+	src: url("/fonts/SunghyunSans/SunghyunSans-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SunghyunSans";
+	src: url("/fonts/SunghyunSans/SunghyunSans-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SunghyunSans";
+	src: url("/fonts/SunghyunSans/SunghyunSans-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Plus Jakarta Sans";
+	src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Variable.ttf")
+		format("truetype");
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+@theme {
+	--font-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+	--font-sans: "SunghyunSans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: "Plus Jakarta Sans", system-ui, Arial, Helvetica, sans-serif;
+	background-color: #fcf9f4;
+	color: #1c1c19;
+}
