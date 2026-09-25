@@ -26,13 +26,13 @@ const {
 const variants = {
 	primary: 'text-brand-oat bg-brand-espresso',
 	secondary: 'text-brand-oat bg-brand-caramel',
-	ghost: 'text-brand-dark-roast border-b-2 border-brand-caramel pb-0.5',
+	ghost: 'text-body-lg font-semibold tracking-tight text-brand-dark-roast border-b-2 border-brand-caramel pb-0.5 hover:text-brand-caramel transition-colors',
 } as const;
 
 const sizes = {
 	sm: 'text-body-md font-medium py-2 px-3',
 	md: 'text-title-md font-medium py-2 px-4',
-	lg: 'text-headline-sm font-semibold py-2 px-4',
+	lg: 'text-headline-sm font-medium py-2 px-4',
 } as const;
 
 const isGhost = variant === 'ghost';
@@ -45,7 +45,7 @@ const labelClass = iconSide === 'right' ? 'order-1' : 'order-2';
 const classes = [
 	'inline-flex items-center justify-center w-fit gap-space-xs',
 	'font-sunghyun cursor-pointer',
-	sizes[size],
+	isGhost ? '' : sizes[size],
 	pill,
 	variants[variant],
 	className,
