@@ -1,6 +1,7 @@
----
+--- 
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
@@ -11,9 +12,9 @@ import Button from '../components/Button.astro';
 			<li>Productos</li>
 			<li>Servicios</li>
 			<li>Nosotros</li>
-			<li>Contacto</li>
+			<!-- <li>Contacto</li> -->
 		</ul>
-		<Button label="Reservar" />
+		<Button label="Contáctanos" variant='secondary' />
 	</navbar>
 
 	<section class="grid min-h-svh items-center px-margin py-space-xl z-10">
@@ -42,6 +43,8 @@ import Button from '../components/Button.astro';
 			<img src="images/test3.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/8 -translate-y-1/2 h-3/4 z-0 object-cover" />
 		</div>
 	</section>
+
+	<Footer />
 </Layout>
 
 <style>
