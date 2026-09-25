@@ -3,31 +3,51 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<navbar class="absolute top-0 flex justify-between items-center w-full h-20 px-30 z-10"> 
-		<h1 class="text-2xl font-semibold tracking-tight">Cafelia</h1>
-		<ul class="flex gap-x-4 tracking-tight font-medium">
+	<navbar class="absolute top-0 flex justify-between items-center w-full h-20 px-margin z-10">
+		<h1 class="text-2xl font-semibold tracking-tight text-on-surface">Cafelia</h1>
+		<ul class="flex gap-x-4 tracking-tight font-medium text-on-surface">
 			<li>Menú</li>
 			<li>Productos</li>
 			<li>Servicios</li>
 			<li>Nosotros</li>
 			<li>Contacto</li>
 		</ul>
-		<span class="text-title-md font-medium tracking- py-2 px-4 rounded-full text-white bg-amber-950">Reservar</span>
+		<span class="text-title-md font-medium py-2 px-4 rounded-full
+		text-brand-oat bg-brand-espresso">
+			Reservar
+		</span>
 	</navbar>
 
-	<section class="flex flex-col justify-center h-full px-30">
-		<h1 class="text-display-lg max-w-xl mb-6">Un cafesito o que mi rey, no lo piensas de una</h1>
+	<section class="grid min-h-svh items-center px-margin py-space-xl bg-[#FEFEFF] z-10">
+		<div class="grid w-full max-w-7xl mx-auto gap-space-xl lg:grid-cols-12 lg:gap-mapx-margin">
+			<div class="lg:col-span-6 flex flex-col justify-center z-10">
+				<p class="text-label-md uppercase text-brand-olive">
+					Café de especialidad · Brunch artesanal
+				</p>
 
-		<div class="flex h-fit gap-x-2">
-			<span class="w-fit text-title-md font-medium py-2 px-4 rounded-full text-white bg-amber-950">
-				Reservar
-			</span>
-			<span class="w-fit text-title-md font-semibold py-2 px-4 rounded-full text-on-surface-variant bg-surface-container">
-				Reservar
-			</span>
+				<h1 class="text-display-lg-mobile lg:text-display-lg text-on-surface max-w-xl mt-space-md mb-space-lg">
+					El ritual del café, hecho con calma y buena leña
+				</h1>
+
+				<p class="text-body-lg text-on-surface-variant max-w-md mb-space-xl">
+					Tostamos en pequeños lotes, horneamos cada mañana y servimos todo a la
+					temperatura justa, en un atelier donde el tiempo va más despacio.
+				</p>
+
+				<div class="flex flex-wrap items-center gap-space-md">
+					<span class="text-title-md font-medium py-2 px-4 rounded-full
+					text-brand-oat bg-brand-espresso font-sunghyun">
+						Reservar una mesa
+					</span>
+					<a href="#menu"
+					class="text-body-md font-semibold text-brand-dark-roast border-b-2 border-brand-caramel pb-0.5 hover:text-brand-caramel transition-colors">
+						Ver el menú →
+					</a>
+				</div>
+			</div>
+
+			<img src="images/test3.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/8 -translate-y-1/2 h-3/4 z-0 object-cover" />
 		</div>
-			
-
 	</section>
 </Layout>
 
