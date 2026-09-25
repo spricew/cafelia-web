@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
 ---
 
 <Layout>
@@ -12,10 +13,7 @@ import Layout from '../layouts/Layout.astro';
 			<li>Nosotros</li>
 			<li>Contacto</li>
 		</ul>
-		<span class="text-title-md font-medium py-2 px-4 rounded-full
-		text-brand-oat bg-brand-espresso">
-			Reservar
-		</span>
+		<Button label="Reservar" />
 	</navbar>
 
 	<section class="grid min-h-svh items-center px-margin py-space-xl z-10">
@@ -35,14 +33,9 @@ import Layout from '../layouts/Layout.astro';
 				</p>
 
 				<div class="flex flex-wrap items-center gap-space-md">
-					<span class="text-title-md font-medium py-2 px-4 rounded-full
-					text-brand-oat bg-brand-espresso font-sunghyun">
-						Reservar una mesa
-					</span>
-					<a href="#menu"
-					class="text-body-md font-semibold text-brand-dark-roast border-b-2 border-brand-caramel pb-0.5 hover:text-brand-caramel transition-colors">
-						Ver el menú →
-					</a>
+					<Button label="Reservar una mesa" size='lg'/>
+					<Button variant='ghost' label="Ver el menú →" size='md' />
+					
 				</div>
 			</div>
 
