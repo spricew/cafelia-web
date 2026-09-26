@@ -1,23 +1,16 @@
 --- 
 import Layout from '@layouts/Layout.astro';
-import Button from '@components/Button.astro';
+import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
+import Button from '@components/Button.astro';
 ---
 
 <Layout>
-	<navbar class="absolute top-0 flex justify-between items-center w-full h-20 px-margin z-10">
-		<h1 class="text-2xl font-semibold tracking-tight text-on-surface">Cafelia</h1>
-		<ul class="flex gap-x-4 tracking-tight font-medium text-on-surface">
-			<li>Menú</li>
-			<li>Productos</li>
-			<li>Servicios</li>
-			<li>Nosotros</li>
-		</ul>
-		<Button label="Contáctanos" variant='secondary' />
-	</navbar>
 
-	<section class="grid min-h-svh items-center px-margin py-space-xl z-10">
-		<div class="grid w-full max-w-7xl mx-auto lg:grid-cols-12 lg:gap-x-margin">
+	<Navbar/>
+
+	<section class="grid min-h-svh place-items-center items-center z-10">
+		<div class="grid w-full max-w-7xl lg:grid-cols-12">
 			<div class="lg:col-span-6 flex flex-col justify-center z-10">
 				<p class="text-label-md uppercase text-brand-olive">
 					Café de especialidad · Brunch artesanal
@@ -39,9 +32,9 @@ import Footer from '@components/Footer.astro';
 				</div>
 			</div>
 
-			<div class="relative flex col-span-6 w-full h-full" >
+			<div class="relative flex col-span-6 w-full h-full">
 				<img src="images/test3.png" alt="" 
-				class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full z-0 object-cover" />
+				class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-90 z-0 object-cover" />
 			</div>
 		</div>
 	</section>
