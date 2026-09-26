@@ -12,13 +12,12 @@ import Footer from '../components/Footer.astro';
 			<li>Productos</li>
 			<li>Servicios</li>
 			<li>Nosotros</li>
-			<!-- <li>Contacto</li> -->
 		</ul>
 		<Button label="Contáctanos" variant='secondary' />
 	</navbar>
 
 	<section class="grid min-h-svh items-center px-margin py-space-xl z-10">
-		<div class="grid w-full max-w-7xl mx-auto gap-space-xl lg:grid-cols-12 lg:gap-mapx-margin">
+		<div class="grid w-full max-w-7xl mx-auto lg:grid-cols-12 lg:gap-x-margin">
 			<div class="lg:col-span-6 flex flex-col justify-center z-10">
 				<p class="text-label-md uppercase text-brand-olive">
 					Café de especialidad · Brunch artesanal
@@ -40,7 +39,10 @@ import Footer from '../components/Footer.astro';
 				</div>
 			</div>
 
-			<img src="images/test3.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/8 -translate-y-1/2 h-3/4 z-0 object-cover" />
+			<div class="relative flex col-span-6 w-full h-full" >
+				<img src="images/test3.png" alt="" 
+				class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full z-0 object-cover" />
+			</div>
 		</div>
 	</section>
 
