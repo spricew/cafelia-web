@@ -180,6 +180,7 @@
 	--spacing-space-md: 1rem;
 	--spacing-space-lg: 1.5rem;
 	--spacing-space-xl: 2.5rem;
+	--spacing-space-2xl: 5rem;
 
 	/* Elevation — tactile ambient shadows */
 	--shadow-lift: 0 4px 16px rgb(44 24 16 / 0.06);
@@ -199,3 +200,9 @@ body {
 	background-color: #fcf9f4;
 	color: #1c1c19;
 }
+
+/* * Visualizer */
+/* * {
+	box-sizing: border-box;
+	outline: red 1px solid;
+} */
